@@ -1,0 +1,47 @@
+body {
+ padding:20px;
+}
+h1 {
+  margin-top: 0;
+}
+.cover-container {
+	color: #333;
+    text-align: center;
+	    position: fixed;
+    top: 50%;
+    left: 50%;
+	margin:-82px 0 0 -95px;
+}
+
+
+
+/* View: users list */
+.users {
+ width:100%;
+ border:1px solid #ddd;
+   border-radius: 4px;
+}
+
+.users tr th {
+    padding: 15px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.users tr td {
+    padding: 15px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+.users tr:hover td {
+    background-color: #ddd;
+}

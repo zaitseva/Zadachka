@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="Name">Alphabetical</option>
+          <option value="Company">Company</option>
+		   <option value="Group">Group</option>
+		    <option value="Id">Id</option>
+        </select>
+      </p>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <table class="users">
+		<tr>
+			<th>№</th>
+			<th>Name</th>
+			<th>Company</th>
+			<th>Group</th>
+			<th>Phone</th>
+		</tr>
+        <tr ng-repeat="user in $ctrl.users | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+        class="user-list-item user">
+			<td>{{user.Id}}</td>
+			<td>{{user.Name}}</td>
+			<td>{{user.Company}}</td>
+			<td>{{user.Group}}</td>
+			<td>{{user.Phone}}</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+</div>
